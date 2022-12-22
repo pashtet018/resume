@@ -5,70 +5,94 @@
     <meta name="keywords" content="Золотарёв, Павел, cv, resume">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Золотарёв резюме</title>
 </head>
 <body>
-    <img src="foto_ava.jpg" alt="Золотарёв Павел" width="200">
+    <div class="container">
+    <div class="info">
+    <img src="foto_ava.jpg" alt="Золотарёв Павел" class="avatar">
+    <div class="info-text">
     <h1>Золотарёв Павел</h1>
     <p>Я занимаюсь футболом 12 лет. <strong>Я люблю играть в футбол</strong>. В данный момент занимаюсь в футбольном клубе "ДНК Нации" на позиции вратаря.</p>
     <p>Я учусь в <em> колледдже Бизнеса и Права</em> на 4 курсе. Обучаюсь на профессии Техник-программист на специальности "Программное обеспечение информационных технологий."</p>
     <h4>Список социальных сетей:</h4>
     <a href="https://vk.com/s0luver" target="_blank">VK</a> |
-    <a href="https://www.instagram.com/pash.tet0/?next=%2F" target="_blank">Instagram</a> |
-    <a href="https://web.telegram.org/s0luver" target="_blank">Telegram</a>
-    
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Футбол</li>
-        <li>Поездка на море</li>
-        <li>Игра в компьютерные игры</li>
-        <li>Изучение HTML,CSS,JS</li>
-    </ol>
-
+    <a href="https://instagram.com/pash.tet0/?next=%2F" target="_blank">Instagram</a> |
+    <a href="https://t.me/s0luver" target="_blank">Telegram</a>
+    </div>
+    </div>
+    <div class="card bg-red">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+            <li>Футбол</li>
+            <li>Поездка на море</li>
+            <li>Игра в компьютерные игры</li>
+            <li>Изучение HTML,CSS,JS</li>
+        </ol>
+    </div>
+<div class="card bg-yellow">
     <h2>Опыт работы</h2>
-    <table>
-        <thead>
+    <table class="table">
+        <!-- <thead>
             <tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
-        </thead>
+        </thead> -->
         <tbody>
             <tr>
                 <td>Индивидуальный Предприниматель(Wordpress) </td> 
-                <td>|Разработчик Frontend </td> 
-                <td>|июнь 2022 - август 2022</td>
+                <td>Разработчик Frontend </td> 
+                <td>июнь 2022 - август 2022</td>
             </tr>
         </tbody>
         <tbody>
             <tr>
                 <td>БезопасностьОнЛайн(1С-Битрикс) </td> 
-                <td>|Разработчик Frontend - стажёр </td> 
-                <td>|ноябрь 2022 - сейчас</td>
+                <td>Разработчик Frontend - стажёр </td> 
+                <td>ноябрь 2022 - сейчас</td>
             </tr>
         </tbody>
     </table>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <div>
+</div>
+<div class="card bg-green">
+    <h2>Расписание тренировок и игр по футболу</h2>
+    <ol class="link-list">
+        <li>Тренировки:</li>
+        <ul>
+        <li>Понедельник, Среда, Пятница - 18:00</li>
+
+        </ul>
+        <li>Игры:</li>
+        <ul><li>Суббота, Воскресенье - 21:00</li></ul>
+    </ol>
+    </div>
+    
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+        <div class="form-row">
+        <div class="form-group">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" placeholder="Введите имя">
         </div>
-        <div>
+        <div class="form-group">
             <label for="email">Ваш email:</label>
             <input type="email" id="email" placeholder="Введите email">
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label><br>
+    </div>
+        <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
             <textarea  id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
         </div>
-        <input type="submit" value="Отправить!">
+        <input class="btn" type="submit" value="Отправить!">
+        </form>
         <br>
         <br>
         <br>
         <br>
-    </form>
+</div>
 </body>
 </html>
